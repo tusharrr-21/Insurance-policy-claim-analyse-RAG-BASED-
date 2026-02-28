@@ -20,6 +20,7 @@ Dependent on expert knowledge
 This project automates initial claim evaluation using AI while grounding responses strictly in policy clauses.
 
 🧠 How It Works (RAG Pipeline)
+
 Upload insurance policy document (PDF)
 Extract and chunk policy text
 Convert chunks into embeddings
