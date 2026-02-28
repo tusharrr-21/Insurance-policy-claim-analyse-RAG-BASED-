@@ -40,22 +40,15 @@ This project automates initial claim evaluation using AI while grounding respons
 ---
 
 ## 🏗️ System Architecture
-User Uploads Policy
-↓
-PDF Text Extraction
-↓
-Chunking
-↓
-Embedding Model (nomic-embed-text)
-↓
-ChromaDB (Vector Storage)
-↓
-User Enters Claim + Date of Incident
-↓
-Retrieve Relevant Policy Clauses
-↓
-LLM (phi3 via Ollama)
-↓
-Structured JSON Output
-↓
-Email / Automation Integration
+The system follows a Retrieval-Augmented Generation (RAG) pipeline:
+
+1. **User uploads insurance policy (PDF)**
+2. **PDF text extraction**
+3. **Text chunking**
+4. **Embedding generation** using `nomic-embed-text`
+5. **Vector storage** in `ChromaDB`
+6. **User submits claim details** (including Date of Incident)
+7. **Relevant policy clauses retrieval**
+8. **LLM analysis** using `phi3` via `Ollama`
+9. **Structured JSON decision generation**
+10. **Email-ready response / automation integration**
